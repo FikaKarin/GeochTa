@@ -1,21 +1,65 @@
-.navbar {
-  display: flex;
-  padding: 20px;
-  justify-content: space-around;
-  background-color: #f9c594;
-}
-
-.modal {
-  background-color: #f9c594;
-  height: 30vh;
-  width: 50vh;
-  padding: 1em;
-  border-radius: 2em;
-}
-
-.infoButton {
-  color: black;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
+.navbarContent {
+    background-color: #ffbe81;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  #navbarBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  #homeLink {
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  #navbarInfo {
+    color: black;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  .modal {
+    font-size: 12px;
+    margin: 50px;
+    /* MARGIN /
+  }
+  .modal > .header {
+    width: 100%;
+    / border-bottom: 1px solid gray; */
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffbe81;
+    border-radius: 100px;
+  }
+  .modal > .content {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #ffbe81;
+    border-radius: 5px;
+  }
+  .modal > .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .modal > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }

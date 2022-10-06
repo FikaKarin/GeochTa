@@ -1,0 +1,19 @@
+.btn {
+    justify-content: center;
+  
+    width: 320px;
+    height: 60px;
+    margin-top: 100%;
+    position: relative;
+    background: #f3a358;
+    border-radius: 10px;
+    color: white;
+  
+    font-size: 2rem;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a {
+    color: white;
+  }
