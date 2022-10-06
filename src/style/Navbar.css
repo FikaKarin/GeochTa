@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  background-color: #f9c594;
+}
+
+.modal {
+  background-color: #f9c594;
+  height: 30vh;
+  width: 50vh;
+  padding: 1em;
+  border-radius: 2em;
+}
+
+.infoButton {
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
