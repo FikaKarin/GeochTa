@@ -1,37 +1,31 @@
-.navbarContent {
-    background-color: #ffbe81;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-  }
-  #navbarBtn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  #homeLink {
-    color: black;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  #navbarInfo {
-    color: black;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-  }
-  .modal {
+#navbarBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+#homeLink {
+  color: black;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+#navbarInfo {
+  color: black;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+}
+  
+  
+  /* .modal {
     font-size: 12px;
     margin: 50px;
-    /* MARGIN /
+
   }
   .modal > .header {
     width: 100%;
-    / border-bottom: 1px solid gray; */
     font-size: 18px;
     text-align: center;
     padding: 5px;
@@ -62,4 +56,4 @@
     background: #ffffff;
     border-radius: 18px;
     border: 1px solid #cfcece;
-  }
+  } */
