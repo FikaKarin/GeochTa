@@ -8,16 +8,24 @@ import '../style/Button.css';
 const Welcome = () => {
   const [parent, setParent] = useState(null);
 
-  useEffect(() => {
-    const getParent = async () => {
-      const response = await fetch('http://localhost:3001/parents/0').then(
+  const getParent = async () => {
+    const response = await fetch('http://localhost:3001/parents/0').then(
         (response) => response.json()
-      );
-      // update the state
-      setParent(response);
-    };
+    );
+    // update the state
+    setParent(response);
+};
+
+useEffect(() => {
     getParent();
-  }, []);
+}, []);
+
+useEffect(() => {
+    if (parent && parent.children[0].package === "") {
+        getParent();
+        document.getElementById('packageStatus').innerHTML = 'inget klädpaket ännu';
+    }
+}, [parent]);
 
   return (
     <div className='flex flex-col bg-white h-full bg-opacity-80'>
@@ -38,7 +46,14 @@ const Welcome = () => {
                 <p>
                   som är{' '}
                   <span className='font-bold'>{parent.children[0].age}</span>{' '}
-                  gammal.
+                  gammalt.
+                </p>
+                <p>
+                  och har{' '}
+                  <span id='packageStatus' className='font-bold'>
+                    {parent.children[0].package}
+                  </span>
+                  .
                 </p>
               </div>
               <div>
