@@ -7,7 +7,7 @@
       "children": [
         {
           "age": "2 månader",
-          "package": ""
+          "package": "Strl 56 - 60"
         }
       ]
     }
@@ -15,7 +15,7 @@
   "packages": [
     {
       "id": 0,
-      "size": "Small strl: 44-50"
+      "size": "SMALL strl: 44-50"
     },
     {
       "id": 1,
@@ -23,7 +23,7 @@
     },
     {
       "id": 2,
-      "size": "Large strl: 56-62"
+      "size": "LARGE strl: 56-62"
     }
   ]
 }

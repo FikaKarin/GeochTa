@@ -1,0 +1,10 @@
+.confirmText {
+    padding: 3em;
+    text-align: left;
+    list-style-type: square;
+}
+
+p.inline-flex span {
+    text-align: left;
+    padding-left: 2em;
+}

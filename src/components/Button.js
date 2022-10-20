@@ -1,33 +1,29 @@
 const SelectButton = (size) => {
-   
+  //fetch parent and update it locally, make response to an object
+  fetch('http://localhost:3001/parents/0').then((response) => {
+    response.json().then(parent => {
+      parent.children[0].package = size
 
-    //console logga datan i objektet, storleket
-    //kolla att jag först når datan
+      //We want to update parent in db.json with the value we have locally
+      //body is our new parent that we want to raplace parent in db.json with
+      const requestOptions = {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(parent),
+      };
+      //put object we made on this location in db
+      fetch('http://localhost:3001/parents/0', requestOptions)
+        .then((response) => response.json());
+    })
+  });
 
-    console.log(size);
+  console.log(size);
 
-    // const [savedPackage, setpackage] = useState([]);
-    // const [packages, setPackages] = useState(null);
+  return (
+    <div>
 
-// useEffect(() => {
-//   const getPackages = async () => {
-//       const response = await fetch(
-//           "http://localhost:3001/packages"
-//       ).then((response) => response.json());
-//       // update the state
-//       setPackages(response);
-//   };
-//   getPackages();
-// }, []);
+    </div>
+  );
+};
 
-    return ( 
-       <div>
-         {/* const handleClick = () => {
-            array.packages.push(size)
-        } */}
-
-       </div>
-     );
-}
- 
 export default SelectButton;
