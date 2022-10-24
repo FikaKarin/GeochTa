@@ -21,12 +21,12 @@ useEffect(() => {
     getParent();
 }, []);
 
-useEffect(() => {
-    if (parent && parent.children[0].package === "") {
-        getParent();
-        document.getElementById('packageStatus').innerHTML = 'inget klädpaket ännu';
-    }
-}, [parent]);
+// useEffect(() => {
+//     if (parent && parent.children[0].package === "") {
+//         getParent();
+//         document.getElementById('packageStatus').innerHTML = 'inget klädpaket ännu';
+//     }
+// }, [parent]);
 
   return (
     <div>
@@ -34,10 +34,12 @@ useEffect(() => {
       <div className='bg-white mx-8 shadow-lg py-4 rounded-lg'>
         <p className='space-y-4 text-xl'>ORDERBEKRÄFTELSE</p>
         <br />
-        <p bg-white mx-8 shadow-lg py-4 rounded-lg>
+        <p>
           Du har beställt klädpaket: <br />
           <span id='packageStatus' className='font-bold'>
-            {parent.children[0].package}
+            {
+              parent != null ? parent.children[0].package : ' inget paket'
+            }
           </span>
           .
         </p>
