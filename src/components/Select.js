@@ -3,6 +3,7 @@
 import Navbar from "./Navbar";
 // import DropDown from './DropDown';
 import PackageList from "./PackageList";
+import { RiNumber2 } from 'react-icons/ri';
 
 
 const Select = () => {
@@ -12,7 +13,10 @@ const Select = () => {
     <div className="flex flex-col bg-white h-full bg-opacity-80">
         <Navbar />
         <div className="mt-8 space-y-4 px-8">
-            <div>
+            <div className='text-black text-4xl font-bold'>
+                <div className="pageNumber2">
+                <RiNumber2 />
+                </div><br />
                 <h1 className="text-black text-4xl font-bold">Välj paket</h1>
             </div>
             <div>
@@ -20,7 +24,6 @@ const Select = () => {
             <p className="font-semibold">Välj storlek</p>
             </div>
             <PackageList />
-            {/* <DropDown /> */}
         </div >
     </div >
     

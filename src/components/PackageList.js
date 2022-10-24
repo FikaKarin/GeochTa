@@ -7,7 +7,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Link } from "react-router-dom";
 import "../style/DropDown.css";
 import "../style/PackageList.css";
-import SelectButton from "./Button";
+import SelectButton from "./SelectButton";
 
 //1 funktion för 3 olika val, onClick för knappen i Välj (data = packag1yo[size])
 //key för valet så det kan sparas i knapp
@@ -61,7 +61,7 @@ class PackageList extends Component {
                   className="btn"
                   onClick={() => SelectButton(this.state.package1yo[0].size)}
                 >
-                  <Link to="/Select">Välj</Link>
+                  <Link to="/Confirm">Välj</Link>
                 </button>
               </div>
             </Typography>
@@ -96,7 +96,7 @@ class PackageList extends Component {
 
               <div className="mt-auto p-4">
                 <button className="btn" onClick={() => SelectButton(this.state.package1yo[1].size)}>
-                  <Link to="/Select">Välj</Link>
+                  <Link to="/Confirm">Välj</Link>
                 </button>
               </div>
             </Typography>
@@ -130,7 +130,7 @@ class PackageList extends Component {
 
               <div className="mt-auto p-4">
                 <button className="btn" onClick={() => SelectButton(this.state.package1yo[2].size)}>
-                  <Link to="/Select">Välj</Link>
+                  <Link to="/Confirm">Välj</Link>
                 </button>
               </div>
               <div className="mt-auto p-4"></div>

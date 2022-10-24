@@ -3,11 +3,11 @@
     {
       "id": 0,
       "name": "Anna",
-      "adress": "Skatgatan 6",
+      "adress": "Skatgatan 6, 162 87 Nacka",
       "children": [
         {
           "age": "2 månader",
-          "package": "Strl 56 - 60"
+          "package": "Strl 44 - 50"
         }
       ]
     }
@@ -24,6 +24,16 @@
     {
       "id": 2,
       "size": "LARGE strl: 56-62"
+    }
+  ],
+  "contact": [
+    {
+      "name": "Shabnam Eliassi",
+      "mobile": "073 009 33 44",
+      "email": "shabnam.eliassi@nackakommun.se",
+      "address": "Sammetsvägen 63, 131 66 Nacka",
+      "office": "Nacka Kommun",
+      "openHours": "Måndag-Fredag: 08.00 - 17.00"
     }
   ]
 }

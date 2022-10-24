@@ -1,6 +1,5 @@
 .btn {
     justify-content: center;
-  
     width: 8em;
     height: 2em;
     margin-top: 2em;
@@ -8,7 +7,6 @@
     background: #f3a358;
     border-radius: 10px;
     color: white;
-  
     font-size: 1.3rem;
   }
   a:link {
