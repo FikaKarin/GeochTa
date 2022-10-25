@@ -7,7 +7,7 @@
       "children": [
         {
           "age": "2 månader",
-          "package": "Strl 44 - 50"
+          "package": "Strl 56 - 60"
         }
       ]
     }
@@ -28,6 +28,7 @@
   ],
   "contact": [
     {
+      "id": 0,
       "name": "Shabnam Eliassi",
       "mobile": "073 009 33 44",
       "email": "shabnam.eliassi@nackakommun.se",

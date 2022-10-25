@@ -58,7 +58,7 @@ const Welcome = () => {
         </div>
         <div className='bg-white mx-8 shadow-lg py-4 rounded-lg'>
           {parent && (
-            <div className='space-y-4 text-xl'>
+            <div className='space-y-10 text-xl'>
               <div>
                 <p>
                   Du har{' '}

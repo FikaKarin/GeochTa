@@ -1,7 +1,31 @@
 .orderApproved a {
-    padding: 1em;
+  padding: 1em;
 }
 
-/* .orderApprovedText {
-    margin-top: 2em;
-} */
+.check svg {
+  display: inline-flex;
+  font-size: 75px;
+}
+
+.package svg {
+  display: inline-flex;
+  font-size: 75px;
+  color: rgb(81, 55, 9);
+  background-color: rgb(106, 188, 106);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.arrow svg {
+    margin-top: 5vh;
+    display: inline-flex;
+    font-size: 75px;
+    color:rgb(253 186 116);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.openHours {
+    color: rgb(92, 147, 28);
+    font-size: 1.5em;
+}
