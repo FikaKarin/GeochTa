@@ -17,7 +17,6 @@ const SelectButton = (size) => {
     })
   });
 
-  console.log(size);
 
   return (
     <div>

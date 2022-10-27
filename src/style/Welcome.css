@@ -1,0 +1,18 @@
+.baby {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  display: inline-flex;
+  font-size: 55px;
+  color: rgb(250, 168, 80);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+#package {
+    width: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 12px;
+   }

@@ -4,25 +4,30 @@
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { useEffect, useState } from 'react';
+
 import '../style/OrderApproved.css';
+
 import Kretslopp from '../images/PaketKretslopp.PNG';
+
 import { FcApproval } from 'react-icons/fc';
 import {ImArrowDown} from 'react-icons/im';
 
 const OrderApproved = () => {
+
   const [parent, setParent] = useState(null);
 
   const getParent = async () => {
     const response = await fetch('http://localhost:3001/parents/0').then(
       (response) => response.json()
-    );
+    ).then((response) => response)
+    console.log(response);
     // update the state
     setParent(response);
   };
-
   useEffect(() => {
     getParent();
   }, []);
+
 
   const [contact, setContact] = useState(null);
 
@@ -50,7 +55,7 @@ const OrderApproved = () => {
         <br />
         Du har beställt klädpaket: <br />
         <span id='packageStatus' className='font-bold text-xl'>
-          {parent != null ?  parent.children[0].package : ' inget paket'}
+          {parent != null ?  parent.children[0].package.size : ' inget paket'}
         </span>
         . <br />
         <div className='arrow'>

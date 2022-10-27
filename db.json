@@ -2,12 +2,45 @@
   "parents": [
     {
       "id": 0,
-      "name": "Anna",
+      "name": "Linus Harpengren",
       "adress": "Skatgatan 6, 162 87 Nacka",
       "children": [
         {
           "age": "2 månader",
-          "package": "Strl 56 - 60"
+          "package": {
+            "id": 0,
+            "size": "Strl: 44-50",
+            "productlist": [
+              {
+                "id": 0,
+                "product": "5 sparkdräkter"
+              },
+              {
+                "id": 1,
+                "product": "5 tröjor"
+              },
+              {
+                "id": 2,
+                "product": "5 byxor"
+              },
+              {
+                "id": 3,
+                "product": "20 strumpor"
+              },
+              {
+                "id": 4,
+                "product": "2 mössor"
+              },
+              {
+                "id": 5,
+                "product": "2 par skor"
+              },
+              {
+                "id": 6,
+                "product": "4 par vantar"
+              }
+            ]
+          }
         }
       ]
     }
@@ -15,15 +48,105 @@
   "packages": [
     {
       "id": 0,
-      "size": "SMALL strl: 44-50"
+      "size": "Strl: 44-50",
+      "productlist": [
+        {
+          "id": 0,
+          "product": "5 sparkdräkter"
+        },
+        {
+          "id": 1,
+          "product": "5 tröjor"
+        },
+        {
+          "id": 2,
+          "product": "5 byxor"
+        },
+        {
+          "id": 3,
+          "product": "20 strumpor"
+        },
+        {
+          "id": 4,
+          "product": "2 mössor"
+        },
+        {
+          "id": 5,
+          "product": "2 par skor"
+        },
+        {
+          "id": 6,
+          "product": "4 par vantar"
+        }
+      ]
     },
     {
       "id": 1,
-      "size": "MEDIUM strl: 50-56"
+      "size": "Strl: 50-56",
+      "productlist": [
+        {
+          "id": 0,
+          "product": "6 sparkdräkter"
+        },
+        {
+          "id": 1,
+          "product": "6 tröjor"
+        },
+        {
+          "id": 2,
+          "product": "6 byxor"
+        },
+        {
+          "id": 3,
+          "product": "20 strumpor"
+        },
+        {
+          "id": 4,
+          "product": "2 mössor"
+        },
+        {
+          "id": 5,
+          "product": "2 par skor"
+        },
+        {
+          "id": 6,
+          "product": "4 par vantar"
+        }
+      ]
     },
     {
       "id": 2,
-      "size": "LARGE strl: 56-62"
+      "size": "Strl: 56-60",
+      "productlist": [
+        {
+          "id": 0,
+          "product": "7 sparkdräkter"
+        },
+        {
+          "id": 1,
+          "product": "7 tröjor"
+        },
+        {
+          "id": 2,
+          "product": "7 byxor"
+        },
+        {
+          "id": 3,
+          "product": "20 strumpor"
+        },
+        {
+          "id": 4,
+          "product": "2 mössor"
+        },
+        {
+          "id": 5,
+          "product": "2 par skor"
+        },
+        {
+          "id": 6,
+          "product": "4 par vantar"
+        }
+      ]
     }
   ],
   "contact": [

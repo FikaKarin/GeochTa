@@ -1,12 +1,16 @@
-//välkomsttext
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 
-import '../style/Welcome.css';
 import Navbar from './Navbar';
+
+import '../style/Welcome.css';
 import '../style/Button.css';
+
+import singlePackage from '../images/singlePackage.PNG';
+
 import { RiNumber1 } from 'react-icons/ri';
+import { FaBaby } from 'react-icons/fa';
 
 const Welcome = () => {
   const [contact, setContact] = useState(null);
@@ -48,34 +52,37 @@ const Welcome = () => {
     <div className='flex flex-col bg-white h-full bg-opacity-80'>
       <Navbar />
       <div className='mt-8 space-y-8'>
-        <div className='text-black text-4xl font-bold'>
+        <div className='text-black text-4xl'>
           <div className='pageNumber1'>
             {' '}
             <RiNumber1 />
           </div>
           <br />
-          {parent && <h1>Välkommen {parent.name}!</h1>}
+          {parent && (
+            <h1>
+              {' '}
+              <span className='font-bold'> Välkommen </span> <br />{' '}
+              <span className='text-2xl text-green-600'>{parent.name}</span>
+            </h1>
+          )}
         </div>
-        <div className='bg-white mx-8 shadow-lg py-4 rounded-lg'>
+        <div className='bg-white py-16 mx-8 shadow-lg pt-0 rounded-lg'>
           {parent && (
             <div className='space-y-10 text-xl'>
               <div>
+                <FaBaby className='baby' />
+                Du har{' '}
+                <span className='font-bold'>{parent.children.length}</span> barn
+                registrerat <br /> som är{' '}
+                <span className='font-bold'>{parent.children[0].age}</span>{' '}
+                gammalt.
                 <p>
-                  Du har{' '}
-                  <span className='font-bold'>{parent.children.length}</span>{' '}
-                  barn registrerat
-                </p>
-                <p>
-                  som är{' '}
-                  <span className='font-bold'>{parent.children[0].age}</span>{' '}
-                  gammalt.
-                </p>
-                <p>
-                  och har{' '}
-                  <span id='packageStatus' className='font-bold'>
-                    {parent.children[0].package}
+                  <br />
+                  Du har just nu klädpaket: <br />{' '}
+                  <span id='packageStatus' className='font-bold text-2xl'>
+                    {parent.children[0].package.size}
+                    <img id="package" src={singlePackage} alt='Logo' />
                   </span>
-                  .
                 </p>
               </div>
               <div>
@@ -102,8 +109,7 @@ const Welcome = () => {
                         <span className='font-bold'>
                           Om dina uppgifter inte stämmer
                         </span>{' '}
-                        måste du kontakta dina kontaktperson:{' '}
-                        <br />
+                        måste du kontakta dina kontaktperson: <br />
                         <br />
                         <span className='text-black text-2xl font-bold'>
                           {' '}
@@ -125,7 +131,7 @@ const Welcome = () => {
         </div>
       </div>
       <div className='mt-auto p-4'>
-        <button className='bg-orange-400 text-2xl rounded-lg px-16 py-2 mb-12'>
+        <button className='bg-orange-400 text-2xl rounded-lg px-16 py-2 mb-12 mt-6'>
           <Link to='/Select'>GÅ VIDARE</Link>
         </button>
       </div>
