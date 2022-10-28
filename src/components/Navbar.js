@@ -1,12 +1,14 @@
 import { Link, useNavigate } from 'react-router-dom';
 import React from 'react';
-import Popup from 'reactjs-popup';
+// import Popup from 'reactjs-popup';
 import '../style/Navbar.css';
 import '../style/InfoButton.css';
 
+import InfoButton from './InfoButton.js';
+
 import { HiHome } from 'react-icons/hi';
 import { HiArrowLeft } from 'react-icons/hi';
-import { HiInformationCircle } from 'react-icons/hi';
+// import { HiInformationCircle } from 'react-icons/hi';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -20,7 +22,9 @@ const Navbar = () => {
         <HiHome fill="white" stroke='white' />
       </Link>
       </button>
-      <Popup
+
+      < InfoButton />
+      {/* <Popup
         trigger={
           <button id='navbarInfo'>
             {' '}
@@ -55,7 +59,7 @@ const Navbar = () => {
             </div>
           </div>
         )}
-      </Popup>
+      </Popup> */}
     </div>
   );
 };

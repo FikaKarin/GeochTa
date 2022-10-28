@@ -1,22 +1,20 @@
+.popup-overlay {
+  backdrop-filter: blur(10px);
+}
+
 .modal {
   font-size: 12px;
-  margin: 20px;
 }
-/* .modal > .header {
-    width: 100%;
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
-    background-color: #ffbe81;
-  } */
+
 .modal > .content {
   width: 100%;
   padding: 2em;
   padding-bottom: 2em;
-  background-color: #fff0e2;
+  background-color: white;
   line-height: 20px;
   border: 2px solid rgb(241, 181, 77);
   border-radius: 7px;
+
 }
 
 .modal > .content .close {
@@ -29,4 +27,41 @@
   top: -10px;
   right: -10px;
   z-index: 1002;
+}
+
+#infoContent {
+  max-width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  /* padding: 0%; */
+  max-width: 400px;
+}
+
+
+#infoContent .oneImg {
+  border-radius: 35px;
+  margin-left: -15px;
+  margin-bottom: 30px;
+  width: 51px;
+}
+
+#infoContent .twoImg {
+  border-radius: 35px;
+  padding-left: 2px;
+  margin-left: -16px;
+  margin-bottom: 30px;
+  width: 50px;
+}
+
+.threeImg {
+  border-radius: 35px;
+  padding-left: 2px;
+  margin-left: -16px;
+  width: 50px;
+}
+
+#text {
+  width: 250px;
+  margin-top: 2px;
+  font-size: 1.3em;
 }
