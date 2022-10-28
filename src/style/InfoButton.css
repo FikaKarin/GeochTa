@@ -1,5 +1,7 @@
 .popup-overlay {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) opacity(100%) brightness(90%);
+  /* backdrop-filter: sepia(70%); */
+
 }
 
 .modal {
@@ -10,10 +12,10 @@
   width: 100%;
   padding: 2em;
   padding-bottom: 2em;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   line-height: 20px;
   border: 2px solid rgb(241, 181, 77);
-  border-radius: 7px;
+  border-radius: 15px;
 
 }
 

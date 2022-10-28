@@ -36,7 +36,7 @@ const infoButton = () => {
                 <div>
                   <img className='twoImg' src={NrTwo} alt='nrTwo' />
                 </div>
-                <div id='text'>Välj 1 av klädpaketen och klicka på VÄLJ för att komma vidare.</div>
+                <div id='text'>Kontrollera storlek i klädpaketen och klicka på VÄLJ för att komma vidare.</div>
 
                 <div>
                   <img className='threeImg' src={NrThree} alt='nrThree' />

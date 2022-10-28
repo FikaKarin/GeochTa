@@ -20,8 +20,8 @@ const Select = () => {
                 <h1 className="text-black text-4xl font-bold">Välj paket</h1>
             </div>
             <div>
-            <p className="font-semibold m-8">Välj mellan 3 olika storlekar nedan. Alla paket kommer i blandade färger.</p>
-            <p className="font-semibold text-2xl">Välj storlek</p>
+            <p className="m-2 p-2 py-8 my-4 flex flex-col bg-white h-full bg-opacity-100 font-semibold">Välj mellan 3 olika storlekar nedan. Alla paket kommer i blandade färger.</p>
+            <p className=" flex flex-col bg-white h-full bg-opacity-80 font-semibold text-2xl">Välj storlek</p>
             </div>
             <PackageList />
         </div >

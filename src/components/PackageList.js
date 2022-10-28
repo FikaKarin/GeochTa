@@ -13,9 +13,9 @@ const PackageList = () => {
   const [packages, setPackages] = useState(null);
 
   const getPackages = async () => {
-    const response = await fetch('http://localhost:3001/packages').then(
-      (response) => response.json()
-    );
+    const response = await fetch('http://localhost:3001/packages')
+      .then((response) => response.json())
+      .then((response) => response);
     // update the state
     setPackages(response);
   };
@@ -37,7 +37,7 @@ const PackageList = () => {
         <AccordionDetails>
           <Typography component={'span'}>
             <div>
-            <ul>
+              <ul>
                 <div className='size'>{packages ? packages[0].size : ''}</div>
                 <br />
                 {packages
@@ -100,7 +100,7 @@ const PackageList = () => {
         <AccordionDetails>
           <Typography component={'span'}>
             <div>
-            <ul>
+              <ul>
                 <div className='size'>{packages ? packages[2].size : ''}</div>
                 <br />
                 {packages

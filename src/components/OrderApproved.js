@@ -20,7 +20,7 @@ const OrderApproved = () => {
     const response = await fetch('http://localhost:3001/parents/0').then(
       (response) => response.json()
     ).then((response) => response)
-    console.log(response);
+
     // update the state
     setParent(response);
   };
