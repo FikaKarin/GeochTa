@@ -1,7 +1,7 @@
 .baby {
   margin-top: 1vh;
-  margin-bottom: 2vh;
-  display: inline-flex;
+  margin-bottom: 0vh;
+  display:inline-flex;
   font-size: 55px;
   color: rgb(250, 168, 80);
   padding: 8px;
@@ -16,3 +16,5 @@
     margin: auto;
     padding-top: 12px;
    }
+
+ 

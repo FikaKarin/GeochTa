@@ -6,20 +6,20 @@ import Navbar from './Navbar';
 import { useEffect, useState } from 'react';
 
 import '../style/OrderApproved.css';
+import GoogleMaps from './GoogleMaps';
 
 import Kretslopp from '../images/PaketKretslopp.PNG';
 
 import { FcApproval } from 'react-icons/fc';
-import {ImArrowDown} from 'react-icons/im';
+import { ImArrowDown } from 'react-icons/im';
 
 const OrderApproved = () => {
-
   const [parent, setParent] = useState(null);
 
   const getParent = async () => {
-    const response = await fetch('http://localhost:3001/parents/0').then(
-      (response) => response.json()
-    ).then((response) => response)
+    const response = await fetch('http://localhost:3001/parents/0')
+      .then((response) => response.json())
+      .then((response) => response);
 
     // update the state
     setParent(response);
@@ -27,7 +27,6 @@ const OrderApproved = () => {
   useEffect(() => {
     getParent();
   }, []);
-
 
   const [contact, setContact] = useState(null);
 
@@ -55,16 +54,14 @@ const OrderApproved = () => {
         <br />
         Du har beställt klädpaket: <br />
         <span id='packageStatus' className='font-bold text-xl'>
-          {parent != null ?  parent.children[0].package.size : ' inget paket'}
+          {parent != null ? parent.children[0].package.size : ' inget paket'}
         </span>
         . <br />
         <div className='arrow'>
-        <ImArrowDown />
+          <ImArrowDown />
         </div>
         <div className='m-8'>
-          <div className='text-lg'>
-          Hämta och lämna paket här:
-          </div>
+          <div className='text-lg'>Hämta och lämna paket här:</div>
           <br />
           <div className='font-bold text-2xl'>
             {contact != null ? contact.office : 'Kontor ej valt'}
@@ -73,15 +70,20 @@ const OrderApproved = () => {
           <br />
           <br />
           <p className='openHours font-bold'>Öppettider:</p>
-          {contact != null ? contact.openHours : 'Kontor ej valt'}<br/><br />
+          {contact != null ? contact.openHours : 'Kontor ej valt'}
+          <br />
+          <br />
           <img src={Kretslopp} alt='Logo' />
+          <br />
+          <br />
+          <GoogleMaps />
         </div>
       </div>
       <div className='orderApproved'>
         <br />
-        <Link className='btn' to='/Welcome'>
-          Tillbaka till Startsidan
-        </Link>
+        <button className='bg-orange-400 text-2xl rounded-lg px-3 py-2 mb-12 mt-6'>
+          <Link to='/Welcome'>TILLBAKA TILL STARTSIDAN</Link>
+        </button>
       </div>
     </div>
   );

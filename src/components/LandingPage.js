@@ -6,7 +6,6 @@ import "../style/LandingPage.css";
 const LandingPage = () => {
     return ( <div className="landingpage">
         <Link to="/LogIn">Logga in</Link>
-
     </div> );
 }
  

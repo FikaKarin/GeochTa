@@ -42,14 +42,14 @@ const Welcome = () => {
   }, []);
 
   useEffect(() => {
-    if (parent && parent.children[0].package === '') {
+    if (parent && parent.children[0].package.size === '') {
       document.getElementById('packageStatus').innerHTML =
         'inget klädpaket ännu';
     }
   }, [parent]);
 
   return (
-    <div className='flex flex-col bg-white h-full bg-opacity-80'>
+    <div className='flex flex-col bg-white bg-opacity-80'>
       <Navbar />
       <div className='mt-8 space-y-8'>
         <div className='text-black text-4xl'>
@@ -68,7 +68,7 @@ const Welcome = () => {
         </div>
         <div className='bg-white py-16 mx-8 shadow-lg pt-0 rounded-lg'>
           {parent && (
-            <div className='space-y-10 text-xl'>
+            <div className='space-y-10 text-xl pt-6'>
               <div>
                 <FaBaby className='baby' />
                 Du har{' '}
@@ -77,7 +77,7 @@ const Welcome = () => {
                 <span className='font-bold'>{parent.children[0].age}</span>{' '}
                 gammalt.
                 <p>
-                  <br />
+                  <br /><br />
                   Du har just nu klädpaket: <br />{' '}
                   <span id='packageStatus' className='font-bold text-2xl'>
                     {parent.children[0].package.size}

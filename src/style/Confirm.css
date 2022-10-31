@@ -10,3 +10,11 @@ p.inline-flex span {
     padding-left: 2em;
 }
 
+.confirmBackground {
+    background-color:rgb(252, 243, 226);
+}
+
+.confirmButton {
+    background-color: rgb(85, 187, 85);
+    margin-bottom: 2rem;
+}

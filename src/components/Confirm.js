@@ -35,6 +35,8 @@ const Confirm = () => {
     getContact();
   }, []);
 
+
+
   return (
     <div className='flex flex-col bg-white h-full bg-opacity-80'>
       <Navbar />
@@ -43,7 +45,7 @@ const Confirm = () => {
           <RiNumber3 />
         </div>
         <br />
-        <div className='bg-orange-100 mx-8 shadow-lg py-4 rounded-lg'>
+        <div className='confirmBackground mx-8 shadow-lg py-4 rounded-lg'>
           <div className='text-black text-3xl font-bold my-3'>
             <p>Så här går du tillväga</p>
           </div>
@@ -88,7 +90,7 @@ const Confirm = () => {
           </div>
           {show ? (
             <div>
-              <button className='bg-green-600 text-2xl rounded-lg px-16 py-2 text-white'>
+              <button className='confirmButton text-2xl rounded-lg px-16 py-2 text-white'>
                 <Link to='/OrderApproved'>Bekräfta villkor</Link>
               </button>
             </div>
