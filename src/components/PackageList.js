@@ -38,7 +38,9 @@ const PackageList = () => {
           <Typography component={'span'}>
             <div>
               <ul>
-                <div className='font-bold text-xl'>{packages ? packages[0].size : ''}</div>
+                <div className='font-bold text-xl'>
+                  {packages ? packages[0].size : ''}
+                </div>
                 <br />
                 {packages
                   ? packages[0].productlist.map((prod) => (
@@ -66,11 +68,13 @@ const PackageList = () => {
         >
           <Typography>Medium</Typography>
         </AccordionSummary>
-        <AccordionDetails className='middleOption' >
+        <AccordionDetails className='middleOption'>
           <Typography component={'span'}>
             <div>
               <ul>
-                <div className='font-bold text-xl'>{packages ? packages[1].size : ''}</div>
+                <div className='font-bold text-xl'>
+                  {packages ? packages[1].size : ''}
+                </div>
                 <br />
                 {packages
                   ? packages[1].productlist.map((prod) => (
@@ -125,4 +129,3 @@ const PackageList = () => {
 };
 
 export default PackageList;
-
