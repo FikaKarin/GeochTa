@@ -1,0 +1,40 @@
+.geoTa {
+    color: orange;
+    font-size: 45px;
+    padding: 10px;
+    background-color: rgb(250, 235, 215);
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-bottom: 5vw;
+    margin-top: 40vh;
+    border-radius: 50px;
+    font-weight: 600;
+}
+ .landingSpan {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(122, 180, 122);
+    background-color: rgba(249, 245, 240, 0.947);
+    padding: 7px;
+    border-radius: 10px;
+    margin: 3vh;
+}
+
+.nacka {
+    width: 110px;
+    display: inline-block;
+    margin-top: -7px;
+    border-radius: 4px;
+}
+
+.loginBtn {
+    margin-top: 8vh;
+}
+
+@media screen and (min-width: 820px) {
+    .geoTa {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+  }
+

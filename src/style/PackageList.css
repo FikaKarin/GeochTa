@@ -1,14 +1,59 @@
-
-
-
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
     background-color: #fdf6b4b1;
   }
 
-  .css-1elwnq4-MuiPaper-root-MuiAccordion-root .middleOption {
-    background-color: rgba(233, 229, 249, 0.518);
+  #panel2a-header {
+    background: rgba(194, 233, 184, 0.518);
   }
 
   .css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type{
   background-color: rgba(207, 227, 250, 0.81);
   }  
+  
+  .sizeSmall {
+    font-size: 22px;
+    color: rgb(100, 171, 253)
+  }
+  .sizeMedium {
+    font-size: 22px;
+    color: rgb(232, 191, 9)
+  }
+  .sizeLarge {
+    font-size: 22px;
+    color: #07b604;
+  }
+
+  @media screen and (min-width: 820px) {
+    .sizeSmall {
+      font-size: 28px;
+      color: rgb(100, 171, 253)
+    }
+    .sizeMedium {
+      font-size: 28px;
+      color: rgb(232, 191, 9)
+    }
+    .sizeLarge {
+      font-size: 28px;
+      color: #07b604;
+    }
+    .prod1, .prod2, .prod3 {
+      font-size: 25px;
+    }
+    .size {
+      font-weight: bold;
+      font-size: 1.7em;
+    }
+    .prod1 {
+      line-height: 2;
+      font-size: 22px;
+    }
+    .prod2 {
+      line-height: 2;
+      font-size: 22px;
+    }
+    .prod3 {
+      line-height: 2;
+      font-size: 22px;
+    }
+  }
+ 

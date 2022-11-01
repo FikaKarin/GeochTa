@@ -43,9 +43,9 @@ const OrderApproved = () => {
   }, []);
 
   return (
-    <div>
+    <div className='bg-white bg-opacity-80'>
       <Navbar />
-      <div className='bg-white mx-8 shadow-lg py-4 rounded-lg m-8'>
+      <div className='bg-white mx-8 shadow-lg py-4 rounded-lg m-8 '>
         <p className='space-y-4 text-2xl m-8 font-bold '>ORDERBEKRÄFTELSE</p>
         <br />
         <div className='check'>
@@ -73,7 +73,7 @@ const OrderApproved = () => {
           {contact != null ? contact.openHours : 'Kontor ej valt'}
           <br />
           <br />
-          <img src={Kretslopp} alt='Logo' />
+          <img className='package' src={Kretslopp} alt='Logo' />
           <br />
           <br />
           <GoogleMaps />

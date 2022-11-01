@@ -3,3 +3,15 @@
     height: 30vh;
 }
 
+@media screen and (min-width: 820px) {
+    .mapContainer {
+    width: 70%;
+    margin: auto;
+    margin-top: 4vh;
+    }
+    .package {
+        margin-top: 2vh;
+    }
+  }
+
+  

@@ -18,3 +18,9 @@ p.inline-flex span {
     background-color: rgb(85, 187, 85);
     margin-bottom: 2rem;
 }
+ 
+@media screen and (min-width: 820px) {
+    .confirmText {
+        margin-left: 5vw;
+    }
+  }

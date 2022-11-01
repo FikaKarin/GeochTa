@@ -49,7 +49,7 @@ const Welcome = () => {
   }, [parent]);
 
   return (
-    <div className='flex flex-col bg-white bg-opacity-80'>
+    <div className='flex flex-col bg-white bg-opacity-80 h-[74rem]'>
       <Navbar />
       <div className='mt-8 space-y-8'>
         <div className='text-black text-4xl'>

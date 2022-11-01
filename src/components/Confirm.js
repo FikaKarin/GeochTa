@@ -35,8 +35,6 @@ const Confirm = () => {
     getContact();
   }, []);
 
-
-
   return (
     <div className='flex flex-col bg-white h-full bg-opacity-80'>
       <Navbar />
@@ -46,7 +44,7 @@ const Confirm = () => {
         </div>
         <br />
         <div className='confirmBackground mx-8 shadow-lg py-4 rounded-lg'>
-          <div className='text-black text-3xl font-bold my-3'>
+          <div className='confirmBox text-black text-3xl font-bold my-3'>
             <p>Så här går du tillväga</p>
           </div>
           <ul className='confirmText'>
@@ -71,6 +69,7 @@ const Confirm = () => {
               Du får en notis i appen när ditt gamla och nya paket registrerats.
             </li>
           </ul>
+          
           {/* CHECKBOX */}
           <div className='m-8 mb-5'>
             <label>
@@ -88,13 +87,13 @@ const Confirm = () => {
               </p>
             </label>
           </div>
-          {show ? (
+          {checked ? (
             <div>
               <button className='confirmButton text-2xl rounded-lg px-16 py-2 text-white'>
                 <Link to='/OrderApproved'>Bekräfta villkor</Link>
               </button>
             </div>
-          ) : null}
+          ) : show }
         </div>
       </div>
     </div>

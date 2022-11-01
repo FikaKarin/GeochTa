@@ -26,25 +26,26 @@ const PackageList = () => {
 
   return (
     <div className='mt-6 space-y-6 px-2 rounded-lg'>
-      <Accordion>
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls='panel1a-content'
           id='panel1a-header'
+          
         >
-          <Typography>Small</Typography>
+          <Typography><p className='sizeSmall font-bold'>Small</p></Typography>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails >
           <Typography component={'span'}>
             <div>
               <ul>
-                <div className='font-bold text-xl'>
+                <div className='size font-bold text-xl'>
                   {packages ? packages[0].size : ''}
                 </div>
                 <br />
                 {packages
                   ? packages[0].productlist.map((prod) => (
-                      <div> {prod.product} </div>
+                      <div className='prod1 leading-9' key={prod.id}> {prod.product} </div>
                     ))
                   : ''}
               </ul>
@@ -63,22 +64,21 @@ const PackageList = () => {
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls='panel1a-content'
-          id='panel1a-header'
-          className='middleOption'
+          id='panel2a-header'
         >
-          <Typography>Medium</Typography>
+          <Typography><p className='sizeMedium font-bold'>Medium</p></Typography>
         </AccordionSummary>
-        <AccordionDetails className='middleOption'>
+        <AccordionDetails id='panel2a-header'>
           <Typography component={'span'}>
             <div>
               <ul>
-                <div className='font-bold text-xl'>
+                <div className='size font-bold text-xl'>
                   {packages ? packages[1].size : ''}
                 </div>
                 <br />
                 {packages
                   ? packages[1].productlist.map((prod) => (
-                      <div> {prod.product} </div>
+                      <div className='leading-9 prod2' key={prod.id}> {prod.product} </div>
                     ))
                   : ''}
               </ul>
@@ -99,17 +99,17 @@ const PackageList = () => {
           aria-controls='panel1a-content'
           id='panel1a-header'
         >
-          <Typography>Large</Typography>
+          <Typography><p className='sizeLarge font-bold'>Large</p></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography component={'span'}>
             <div>
               <ul>
-                <div className='size'>{packages ? packages[2].size : ''}</div>
+                <div className='size font-bold text-xl'>{packages ? packages[2].size : ''}</div>
                 <br />
                 {packages
                   ? packages[2].productlist.map((prod) => (
-                      <div> {prod.product} </div>
+                      <div className='leading-9 prod3' key={prod.id}> {prod.product} </div>
                     ))
                   : ''}
               </ul>
