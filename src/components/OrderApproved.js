@@ -1,6 +1,6 @@
-//Order confirmation
-//Öppettider
-//OK-knapp
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { useEffect, useState } from 'react';
@@ -14,6 +14,10 @@ import { FcApproval } from 'react-icons/fc';
 import { ImArrowDown } from 'react-icons/im';
 
 const OrderApproved = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const [parent, setParent] = useState(null);
 
   const getParent = async () => {
@@ -43,7 +47,7 @@ const OrderApproved = () => {
   }, []);
 
   return (
-    <div className='bg-white bg-opacity-80'>
+    <div data-aos="flip-left" data-aos-duration="1000" className='bg-white bg-opacity-80'>
       <Navbar />
       <div className='bg-white mx-8 shadow-lg py-4 rounded-lg m-8 '>
         <p className='space-y-4 text-2xl m-8 font-bold '>ORDERBEKRÄFTELSE</p>

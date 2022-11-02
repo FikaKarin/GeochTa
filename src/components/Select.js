@@ -1,10 +1,17 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 import Navbar from './Navbar';
 import PackageList from './PackageList';
 import { RiNumber2 } from 'react-icons/ri';
 
 const Select = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className='select flex flex-col bg-white bg-opacity-80 h-[120rem]'>
+    <div data-aos="fade-left" data-aos-duration="900" className='select flex flex-col bg-white bg-opacity-80 h-[120rem]'>
       <Navbar />
       <div className='mt-8 space-y-4 px-8'>
         <div className='text-black text-4xl font-bold'>

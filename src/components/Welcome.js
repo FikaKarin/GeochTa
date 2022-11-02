@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Navbar from './Navbar';
 
@@ -13,6 +15,11 @@ import { RiNumber1 } from 'react-icons/ri';
 import { FaBaby } from 'react-icons/fa';
 
 const Welcome = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const [contact, setContact] = useState(null);
 
   const getContact = async () => {
@@ -49,7 +56,7 @@ const Welcome = () => {
   }, [parent]);
 
   return (
-    <div className='flex flex-col bg-white bg-opacity-80 h-[74rem]'>
+    <div data-aos="zoom-in" data-aos-duration="600" className='flex flex-col bg-white bg-opacity-80 h-[74rem]'>
       <Navbar />
       <div className='mt-8 space-y-8'>
         <div className='text-black text-4xl'>
@@ -126,6 +133,9 @@ const Welcome = () => {
                   )}
                 </Popup>
               </p>
+              <button className='logOutBtn text-2xl rounded-lg px-16 py-2 mb-12 mt-6'>
+              <Link to='/'>LOGGA UT</Link>
+              </button>
             </div>
           )}
         </div>

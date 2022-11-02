@@ -33,7 +33,7 @@ const PackageList = () => {
           id='panel1a-header'
           
         >
-          <Typography><p className='sizeSmall font-bold'>Small</p></Typography>
+          <Typography><span className='sizeSmall font-bold'>Small</span></Typography>
         </AccordionSummary>
         <AccordionDetails >
           <Typography component={'span'}>
@@ -66,7 +66,7 @@ const PackageList = () => {
           aria-controls='panel1a-content'
           id='panel2a-header'
         >
-          <Typography><p className='sizeMedium font-bold'>Medium</p></Typography>
+          <Typography><span className='sizeMedium font-bold'>Medium</span></Typography>
         </AccordionSummary>
         <AccordionDetails id='panel2a-header'>
           <Typography component={'span'}>
@@ -99,7 +99,7 @@ const PackageList = () => {
           aria-controls='panel1a-content'
           id='panel1a-header'
         >
-          <Typography><p className='sizeLarge font-bold'>Large</p></Typography>
+          <Typography><span className='sizeLarge font-bold'>Large</span></Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography component={'span'}>

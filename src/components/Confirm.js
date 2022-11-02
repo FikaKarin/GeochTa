@@ -1,5 +1,6 @@
-// Bekräftelse av villkor
-// Checkbox
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import React from 'react';
@@ -11,6 +12,10 @@ let buttonVisible = false;
 
 // CHECKBOX AND CONFIRM BUTTON
 const Confirm = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   let [show, setShow] = React.useState(false);
   const onClick = () => {
     buttonVisible = !buttonVisible;
@@ -36,7 +41,7 @@ const Confirm = () => {
   }, []);
 
   return (
-    <div className='flex flex-col bg-white h-full bg-opacity-80'>
+    <div data-aos="fade-down" data-aos-duration="900" className='flex flex-col bg-white h-full bg-opacity-80'>
       <Navbar />
       <div className='mt-8 space-y-8'>
         <div className='pageNumber3'>

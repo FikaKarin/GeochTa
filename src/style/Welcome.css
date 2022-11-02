@@ -17,4 +17,7 @@
     padding-top: 12px;
    }
 
- 
+ .logOutBtn {
+  background-color: rgba(9, 2, 2, 0.444);
+  color: white;
+ }
