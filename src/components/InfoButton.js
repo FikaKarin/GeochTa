@@ -1,4 +1,5 @@
 import Popup from 'reactjs-popup';
+import { Link } from 'react-router-dom';
 
 import '../style/InfoButton.css';
 
@@ -45,7 +46,11 @@ const infoButton = () => {
               </div>
 
               <br />
+              
             </div>
+            <center><button className='logOutBtnModal text-xl rounded-lg px-10 py-2 mb-12 mt-6 '>
+              <Link to='/'>LOGGA UT</Link>
+              </button></center>
           </div>
         )}
       </Popup>

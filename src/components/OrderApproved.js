@@ -1,3 +1,5 @@
+import React from 'react';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -46,6 +48,11 @@ const OrderApproved = () => {
     getContact();
   }, []);
 
+  function refreshPage() {
+    window.location.assign("http://localhost:3000/Notification");
+   
+  }
+
   return (
     <div data-aos="flip-left" data-aos-duration="1000" className='bg-white bg-opacity-80'>
       <Navbar />
@@ -85,7 +92,7 @@ const OrderApproved = () => {
       </div>
       <div className='orderApproved'>
         <br />
-        <button className='bg-orange-400 text-2xl rounded-lg px-3 py-2 mb-12 mt-6'>
+        <button onClick={refreshPage} className='bg-orange-400 text-2xl rounded-lg px-3 py-2 mb-12 mt-6'>
           <Link to='/Welcome'>TILLBAKA TILL STARTSIDAN</Link>
         </button>
       </div>

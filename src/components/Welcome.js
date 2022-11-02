@@ -133,9 +133,8 @@ const Welcome = () => {
                   )}
                 </Popup>
               </p>
-              <button className='logOutBtn text-2xl rounded-lg px-16 py-2 mb-12 mt-6'>
-              <Link to='/'>LOGGA UT</Link>
-              </button>
+              <br />
+              
             </div>
           )}
         </div>

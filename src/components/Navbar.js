@@ -18,48 +18,11 @@ const Navbar = () => {
         <HiArrowLeft />
       </button>
       <button id='home'>
-      <Link to='/Welcome' >
-        <HiHome fill="white" stroke='white' />
-      </Link>
+        <Link to='/Welcome'>
+          <HiHome fill='white' stroke='white' />
+        </Link>
       </button>
-
-      < InfoButton />
-      {/* <Popup
-        trigger={
-          <button id='navbarInfo'>
-            {' '}
-            <HiInformationCircle />{' '}
-          </button>
-        }
-        modal
-        nested
-      >
-        {(close) => (
-          <div className='modal'>
-            <div className='content'>
-              <button className='close' onClick={close}>
-                &times;
-              </button><br />
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-              consequuntur doloribus eveniet. Iste laborum quos earum harum,
-              dignissimos modi obcaecati? Magnam molestiae modi non recusandae
-              odit sed veritatis mollitia dolorum! Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Voluptas consequuntur doloribus
-              eveniet. Iste laborum quos earum harum, dignissimos modi
-              obcaecati? Magnam molestiae modi non recusandae odit sed veritatis
-              mollitia dolorum! Lorem ipsum dolor sit, amet consectetur
-              adipisicing elit. Voluptas consequuntur doloribus eveniet. Iste
-              laborum quos earum harum, dignissimos modi obcaecati? Magnam
-              molestiae modi non recusandae odit sed veritatis mollitia dolorum!
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-              consequuntur doloribus eveniet. Iste laborum quos earum harum,
-              dignissimos modi obcaecati? Magnam molestiae modi non recusandae
-              odit sed veritatis mollitia dolorum!
-              <br />
-            </div>
-          </div>
-        )}
-      </Popup> */}
+      <InfoButton />
     </div>
   );
 };

@@ -67,3 +67,10 @@
   margin-top: 2px;
   font-size: 1.3em;
 }
+
+.logOutBtnModal {
+  display:flex;
+  justify-content:end;
+  background-color: rgba(9, 2, 2, 0.616);
+  color: white;
+}
