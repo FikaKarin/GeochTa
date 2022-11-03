@@ -1,9 +1,11 @@
 .sweater {
-    display:inline-flex;
-    justify-content: center;
-    width: 180px;
+  display: inline-flex;
+  justify-content: center;
+  width: 180px;
 }
 
-.nacka {
-    width: 200px;
+.nacka2 {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
 }

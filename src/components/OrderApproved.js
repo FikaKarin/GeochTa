@@ -3,7 +3,6 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { useEffect, useState } from 'react';
 
@@ -92,8 +91,8 @@ const OrderApproved = () => {
       </div>
       <div className='orderApproved'>
         <br />
-        <button onClick={refreshPage} className='bg-orange-400 text-2xl rounded-lg px-3 py-2 mb-12 mt-6'>
-          <Link to='/Welcome'>TILLBAKA TILL STARTSIDAN</Link>
+        <button onClick={refreshPage} className='text-white bg-orange-400 text-2xl rounded-lg px-4 py-2 mb-12 mt-6'>
+          TILLBAKA TILL STARTSIDAN
         </button>
       </div>
     </div>

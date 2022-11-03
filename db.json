@@ -2,27 +2,27 @@
   "parents": [
     {
       "id": 0,
-      "name": "Linus Harpengren",
-      "personNumber": 9001243501,
+      "name": "Anders Svensson",
+      "personNumber": "9001243501",
       "adress": "Skatgatan 6, 162 87 Nacka",
       "children": [
         {
           "age": "2 månader",
           "package": {
-            "id": 2,
-            "size": "Strl: 56-60",
+            "id": 1,
+            "size": "Strl: 50-56",
             "productlist": [
               {
                 "id": 0,
-                "product": "7 sparkdräkter"
+                "product": "6 sparkdräkter"
               },
               {
                 "id": 1,
-                "product": "7 tröjor"
+                "product": "6 tröjor"
               },
               {
                 "id": 2,
-                "product": "7 byxor"
+                "product": "6 byxor"
               },
               {
                 "id": 3,
