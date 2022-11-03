@@ -42,7 +42,7 @@ const LogIn = () => {
   return (
     <div className='bg-white h-full '>
       <div>
-        <img className='bankid mx-10 my-10' src={Top} alt='Top' />
+        <img className='bankid mx-10 my-16' src={Top} alt='Top' />
         {/* <label id='logIn' htmlFor='personNr'>
         Personnummer
       </label> */}
