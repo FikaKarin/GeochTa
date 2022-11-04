@@ -11,7 +11,11 @@ const Select = () => {
     AOS.init();
   }, []);
   return (
-    <div data-aos="fade-left" data-aos-duration="900" className='select flex flex-col bg-white bg-opacity-80 h-[120rem]'>
+    <div
+      data-aos='fade-left'
+      data-aos-duration='900'
+      className='select flex flex-col bg-white bg-opacity-80 h-[140rem]'
+    >
       <Navbar />
       <div className='mt-8 space-y-4 px-8'>
         <div className='text-black text-4xl font-bold'>

@@ -20,7 +20,7 @@ import pic from './images/bkg.jpeg';
 function App() {
   return (
     <div className='App flex'>
-      <div className='absolute w-full h-full top-0 z-0 flex'><img src={pic} className='object-cover' alt="bg"></img></div>
+      <div className='absolute w-full h-full top-0 z-0 flex'><img src={pic} className='bkg object-cover' alt="bg"></img></div>
       <div className='z-10 h-full w-full'>
         <Router>
           <Routes>

@@ -55,7 +55,7 @@ const OrderApproved = () => {
   return (
     <div data-aos="flip-left" data-aos-duration="1000" className='bg-white bg-opacity-80'>
       <Navbar />
-      <div className='bg-white mx-8 shadow-lg py-4 rounded-lg m-8 '>
+      <div className='approved bg-white mx-8 shadow-lg py-4 rounded-lg m-8 '>
         <p className='space-y-4 text-2xl m-8 font-bold '>ORDERBEKRÄFTELSE</p>
         <br />
         <div className='check'>

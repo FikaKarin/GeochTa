@@ -27,10 +27,3 @@
     border-radius: 4px;
 }
 
-@media screen and (min-width: 820px) {
-    .geoTa {
-        margin-left: 35%;
-        margin-right: 35%;
-    }
-  }
-

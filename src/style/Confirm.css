@@ -19,8 +19,3 @@ p.inline-flex span {
     margin-bottom: 2rem;
 }
  
-@media screen and (min-width: 820px) {
-    .confirmText {
-        margin-left: 5vw;
-    }
-  }

@@ -22,38 +22,3 @@
     font-size: 22px;
     color: #07b604;
   }
-
-  @media screen and (min-width: 820px) {
-    .sizeSmall {
-      font-size: 28px;
-      color: rgb(100, 171, 253)
-    }
-    .sizeMedium {
-      font-size: 28px;
-      color: rgb(232, 191, 9)
-    }
-    .sizeLarge {
-      font-size: 28px;
-      color: #07b604;
-    }
-    .prod1, .prod2, .prod3 {
-      font-size: 25px;
-    }
-    .size {
-      font-weight: bold;
-      font-size: 1.7em;
-    }
-    .prod1 {
-      line-height: 2;
-      font-size: 22px;
-    }
-    .prod2 {
-      line-height: 2;
-      font-size: 22px;
-    }
-    .prod3 {
-      line-height: 2;
-      font-size: 22px;
-    }
-  }
- 

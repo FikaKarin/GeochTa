@@ -10,6 +10,7 @@ import '../style/PackageList.css';
 import SelectButton from './SelectButton';
 
 const PackageList = () => {
+
   const [packages, setPackages] = useState(null);
 
   const getPackages = async () => {
@@ -25,7 +26,7 @@ const PackageList = () => {
   }, []);
 
   return (
-    <div className='mt-6 space-y-6 px-2 rounded-lg'>
+    <div className='selectwidth mt-6 space-y-6 px-2 rounded-lg'>
       <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

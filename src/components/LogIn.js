@@ -40,12 +40,9 @@ const LogIn = () => {
   };
 
   return (
-    <div className='bg-white h-full '>
+    <div className='bankidbkg bg-white h-full '>
       <div>
         <img className='bankid mx-10 my-16' src={Top} alt='Top' />
-        {/* <label id='logIn' htmlFor='personNr'>
-        Personnummer
-      </label> */}
         <br />
         <form action='submit'>
           <input id='input' type='number' />

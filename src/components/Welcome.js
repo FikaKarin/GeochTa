@@ -14,11 +14,13 @@ import singlePackage from '../images/singlePackage.PNG';
 import { RiNumber1 } from 'react-icons/ri';
 import { FaBaby } from 'react-icons/fa';
 
+//Welcome component
+//Display current user info
+//Log out
 const Welcome = () => {
-
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
 
   const [contact, setContact] = useState(null);
 
@@ -56,7 +58,11 @@ const Welcome = () => {
   }, [parent]);
 
   return (
-    <div data-aos="zoom-in" data-aos-duration="600" className='flex flex-col bg-white bg-opacity-80 h-[74rem]'>
+    <div
+      data-aos='zoom-in'
+      data-aos-duration='600'
+      className='flex flex-col bg-white bg-opacity-80 h-[74rem]'
+    >
       <Navbar />
       <div className='mt-8 space-y-8'>
         <div className='text-black text-4xl'>
@@ -73,7 +79,7 @@ const Welcome = () => {
             </h1>
           )}
         </div>
-        <div className='bg-white py-16 mx-8 shadow-lg pt-0 rounded-lg'>
+        <div className='welcome bg-white pt-8 mx-8 shadow-lg pt-0 rounded-lg'>
           {parent && (
             <div className='space-y-10 text-xl pt-6'>
               <div>
@@ -84,11 +90,12 @@ const Welcome = () => {
                 <span className='font-bold'>{parent.children[0].age}</span>{' '}
                 gammalt.
                 <p>
-                  <br /><br />
+                  <br />
+                  <br />
                   Du har just nu klädpaket: <br />{' '}
                   <span id='packageStatus' className='font-bold text-2xl'>
                     {parent.children[0].package.size}
-                    <img id="package" src={singlePackage} alt='Logo' />
+                    <img id='package' src={singlePackage} alt='Logo' />
                   </span>
                 </p>
               </div>
@@ -96,6 +103,8 @@ const Welcome = () => {
                 <p>Din registrerade adress är:</p>
                 <p className='text-black text-1xl font-bold'>{parent.adress}</p>
               </div>
+
+              {/*Pop up modal - contact information if user info is not correct  */}
               <p className='text-orange-300 underline'>
                 <Popup
                   trigger={
@@ -132,15 +141,19 @@ const Welcome = () => {
                     </div>
                   )}
                 </Popup>
+                <br />
               </p>
+              <center><button className='logOutBtnModal text-xl rounded-lg px-10 py-2 mb-12 mt-6 '>
+              <Link to='/'>LOGGA UT</Link>
+              </button></center>
               <br />
-              
+
             </div>
           )}
         </div>
       </div>
       <div className='mt-auto p-4'>
-        <button className='bg-orange-400 text-2xl rounded-lg px-16 py-2 mb-12 mt-6'>
+        <button className='bg-orange-400 text-2xl rounded-lg px-16 py-2 mb-16'>
           <Link to='/Select'>GÅ VIDARE</Link>
         </button>
       </div>

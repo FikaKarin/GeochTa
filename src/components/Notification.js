@@ -22,7 +22,7 @@ const Notification = () => {
       <div
         data-aos='flip-left'
         data-aos-duration='1000'
-        className='bg-white mx-5 py-14 px-8 shadow-lg py-4 rounded-lg mt-16'
+        className='notification bg-white mx-5 py-14 px-8 shadow-lg py-4 rounded-lg mt-16'
       >
         <div className='font-bold text-2xl mt-10'>
           {' '}

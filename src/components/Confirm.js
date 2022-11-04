@@ -10,22 +10,28 @@ import { RiNumber3 } from 'react-icons/ri';
 
 let buttonVisible = false;
 
-// CHECKBOX AND CONFIRM BUTTON
+//Confirm component
+//Checkbox - if check = display next-page-button
 const Confirm = () => {
+  //AOS css - renders page with effect
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
 
+  //Set state button not visible
   let [show, setShow] = React.useState(false);
   const onClick = () => {
     buttonVisible = !buttonVisible;
     setShow(buttonVisible);
   };
+
+  //Set state checkbox not checked
   const [checked, setChecked] = React.useState(false);
   const handleChange = () => {
     setChecked(!checked);
   };
 
+  //fetch contact from db.json
   const [contact, setContact] = useState(null);
 
   const getContact = async () => {
@@ -41,7 +47,11 @@ const Confirm = () => {
   }, []);
 
   return (
-    <div data-aos="fade-down" data-aos-duration="900" className='flex flex-col bg-white h-full bg-opacity-80'>
+    <div
+      data-aos='fade-down'
+      data-aos-duration='900'
+      className='flex flex-col bg-white h-[58rem] bg-opacity-80'
+    >
       <Navbar />
       <div className='mt-8 space-y-8'>
         <div className='pageNumber3'>
@@ -74,8 +84,8 @@ const Confirm = () => {
               Du får en notis i appen när ditt gamla och nya paket registrerats.
             </li>
           </ul>
-          
-          {/* CHECKBOX */}
+
+          {/* CHECKBOX and BUTTON */}
           <div className='m-8 mb-5'>
             <label>
               <p className='inline-flex'>
@@ -98,7 +108,9 @@ const Confirm = () => {
                 <Link to='/OrderApproved'>Bekräfta villkor</Link>
               </button>
             </div>
-          ) : show }
+          ) : (
+            show
+          )}
         </div>
       </div>
     </div>

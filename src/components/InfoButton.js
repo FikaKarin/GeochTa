@@ -9,6 +9,8 @@ import NrOne from '../images/nrOne.PNG';
 import NrTwo from '../images/nrTwo.PNG';
 import NrThree from '../images/nrThree.PNG';
 
+//InfoButton component in Navbar
+//Pop up modal with info and Log Out button
 const infoButton = () => {
   return (
     <div >
