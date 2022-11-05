@@ -1,5 +1,5 @@
-import { Link, useNavigate } from 'react-router-dom';
-import React from 'react';
+import { Link, useNavigate, } from 'react-router-dom';
+import { React } from 'react';
 // import Popup from 'reactjs-popup';
 import '../style/Navbar.css';
 import '../style/InfoButton.css';
@@ -11,6 +11,7 @@ import { HiArrowLeft } from 'react-icons/hi';
 // import { HiInformationCircle } from 'react-icons/hi';
 
 const Navbar = () => {
+
   const navigate = useNavigate();
   return (
     <div className='bg-orange-300 flex justify-between py-2 px-4'>

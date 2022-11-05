@@ -46,7 +46,16 @@
 
 /* Media query for iPad air */
 @media screen and (min-width: 820px) and (max-height: 1180px) {
-  
+ 
+  .bankid {
+    margin-top: 10rem;
+  }
+  .confirm {
+    height: 100%;
+  }
+  .package {
+    margin: 0 auto;
+  }
   .pageNumber1 {
     display: flex;
     align-items: center;
@@ -81,6 +90,11 @@
 @media screen and (min-width:1180px) and (max-height: 820px)  {
   .bkg {
     margin: 0 auto;
+  }
+  .landingpage .geoTa {
+    margin-left: 29rem;
+    margin-right: 29rem;
+
   }
   .welcome {
     margin-right: 14rem;
@@ -132,9 +146,11 @@
   .bankid {
     margin-right: 12rem;
     margin-left: 12rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .bankidbkg {
-    height: 200%
+    height: 240%;
   }
   .welcome {
     margin-right: 16rem;
@@ -147,6 +163,10 @@
   .confirmBackground {
     margin-right: 16rem;
     margin-left: 16rem;
+  }
+  .confirm {
+    height: 220%;
+
   }
   .approved {
     margin-right: 16rem;

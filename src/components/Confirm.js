@@ -50,7 +50,7 @@ const Confirm = () => {
     <div
       data-aos='fade-down'
       data-aos-duration='900'
-      className='flex flex-col bg-white h-[58rem] bg-opacity-80'
+      className='confirm flex flex-col bg-white h-[58rem] bg-opacity-80'
     >
       <Navbar />
       <div className='mt-8 space-y-8'>

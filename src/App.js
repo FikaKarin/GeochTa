@@ -8,6 +8,7 @@ import './style/Confirm.css';
 import './style/Notification.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import LandingPage from './components/LandingPage';
 import LogIn from './components/LogIn';
 import Welcome from './components/Welcome';
@@ -18,6 +19,7 @@ import Notification from './components/Notification';
 import pic from './images/bkg.jpeg';
 
 function App() {
+
   return (
     <div className='App flex'>
       <div className='absolute w-full h-full top-0 z-0 flex'><img src={pic} className='bkg object-cover' alt="bg"></img></div>
