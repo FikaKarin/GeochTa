@@ -1,22 +1,21 @@
 .popup-overlay {
   backdrop-filter: blur(10px) opacity(100%) brightness(90%);
-  /* backdrop-filter: sepia(70%); */
-
 }
 
 .modal {
+  margin-top: -11rem;
   font-size: 12px;
 }
 
 .modal > .content {
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
   padding: 2em;
   padding-bottom: 2em;
   background-color: rgb(255, 255, 255);
   line-height: 20px;
   border: 2px solid rgb(241, 181, 77);
   border-radius: 15px;
-
 }
 
 .modal > .content .close {
@@ -35,10 +34,8 @@
   max-width: 300px;
   display: grid;
   grid-template-columns: 1fr 4fr;
-  /* padding: 0%; */
   max-width: 400px;
 }
-
 
 #infoContent .oneImg {
   border-radius: 35px;
@@ -69,8 +66,15 @@
 }
 
 .logOutBtnModal {
-  display:flex;
-  justify-content:end;
+  display: flex;
+  justify-content: end;
   background-color: rgba(9, 2, 2, 0.616);
   color: white;
+}
+
+.error {
+  color: rgb(209, 23, 23);
+  padding-top: 3rem;
+  font-size: 3rem;
+  margin-left: -0.8rem;
 }

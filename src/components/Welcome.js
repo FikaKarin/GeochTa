@@ -122,10 +122,10 @@ const Welcome = () => {
                         <button className='close' onClick={close}>
                           &times;
                         </button>
-                        <span className='font-bold'>
+                        <span className='font-bold text-red-600 italic '>
                           Om dina uppgifter inte stämmer
                         </span>{' '}
-                        måste du kontakta dina kontaktperson: <br />
+                        måste du kontakta din kontaktperson: <br />
                         <br />
                         <span className='text-black text-2xl font-bold'>
                           {' '}

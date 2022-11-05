@@ -43,10 +43,8 @@
   margin-right: 42.5%;
 }
 
-
 /* Media query for iPad air */
 @media screen and (min-width: 820px) and (max-height: 1180px) {
- 
   .bankid {
     margin-top: 10rem;
   }
@@ -87,14 +85,13 @@
 }
 
 /* Media query needed for rotated view iPad air */
-@media screen and (min-width:1180px) and (max-height: 820px)  {
+@media screen and (min-width: 1180px) and (max-height: 820px) {
   .bkg {
     margin: 0 auto;
   }
   .landingpage .geoTa {
     margin-left: 29rem;
     margin-right: 29rem;
-
   }
   .welcome {
     margin-right: 14rem;
@@ -112,7 +109,7 @@
     margin-left: 14rem;
   }
   .notification {
-    margin-top:2rem;
+    margin-top: 2rem;
     margin-right: 14rem;
     margin-left: 14rem;
   }
@@ -131,10 +128,9 @@
 }
 
 /* Media query needed for rotated view iPhone XR */
-@media screen and (min-width: 896px) and (max-height: 414px)  {
+@media screen and (min-width: 896px) and (max-height: 414px) {
   .App {
     margin-bottom: 10px;
-
   }
   .bkg {
     margin: 0 auto;
@@ -142,6 +138,14 @@
   .landingpage {
     margin-right: 9rem;
     margin-left: 9rem;
+  }
+  .landingpage .geoTa {
+    font-size: 2.4rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+  .landingpage button {
+    font-size: 1.5rem;
   }
   .bankid {
     margin-right: 12rem;
@@ -166,7 +170,6 @@
   }
   .confirm {
     height: 220%;
-
   }
   .approved {
     margin-right: 16rem;
@@ -178,7 +181,7 @@
   }
 
   .notification {
-    margin-top:2rem;
+    margin-top: 2rem;
     margin-right: 16rem;
     margin-left: 16rem;
   }
