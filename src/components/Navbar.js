@@ -11,6 +11,7 @@ import { HiArrowLeft } from 'react-icons/hi';
 //Navbar component
 //icon-button, left arrow, navigate to previous page
 //icon-button, home, navigate to /Welcome
+//icon-button, info, modal and log out button
 const Navbar = () => {
 
   const navigate = useNavigate();
