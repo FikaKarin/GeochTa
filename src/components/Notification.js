@@ -1,13 +1,16 @@
-//Pop up från OrderApproved
-//Befräftelse på inlämnat och dess innehåll
 import { useEffect } from 'react';
+
+//Animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 import '../style/Notification.css';
 
 import Sweater from '../images/sweater.PNG';
 import Nacka from '../images/Nacka.PNG';
 
+//Notification component
+//Redirect after 15 sec to /Welcome
 const Notification = () => {
   useEffect(() => {
     AOS.init();

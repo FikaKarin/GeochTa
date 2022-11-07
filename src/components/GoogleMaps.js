@@ -1,5 +1,7 @@
 import { useMemo } from 'react';
+
 import { GoogleMap, useLoadScript, MarkerF } from '@react-google-maps/api';
+
 import '../style/GoogleMaps.css';
 
 //Component for Google maps
@@ -23,7 +25,7 @@ export default function GoogleMaps() {
           center={{ lat: 59.30903, lng: 18.1601282 }}
           mapContainerClassName='mapContainer'
         >
-          <MarkerF className="border-solid border" position={center} />
+          <MarkerF className='border-solid border' position={center} />
         </GoogleMap>
       </div>
     );

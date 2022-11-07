@@ -1,11 +1,16 @@
+import { useEffect } from 'react';
+
+//Animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 import Navbar from './Navbar';
 import PackageList from './PackageList';
+
 import { RiNumber2 } from 'react-icons/ri';
 
+//Select component
+//Display PackageList component
 const Select = () => {
   useEffect(() => {
     AOS.init();

@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+import React from 'react';
+import { useEffect, useState } from 'react';
+
+//Animations
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Navbar from './Navbar';
-import { Link } from 'react-router-dom';
-import React from 'react';
-import { useEffect, useState } from 'react';
 
 import { RiNumber3 } from 'react-icons/ri';
 

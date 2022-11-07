@@ -6,9 +6,6 @@ import '../style/InfoButton.css';
 import { HiInformationCircle } from 'react-icons/hi';
 import { BiErrorAlt } from 'react-icons/bi';
 
-
-
-
 import NrOne from '../images/nrOne.PNG';
 import NrTwo from '../images/nrTwo.PNG';
 import NrThree from '../images/nrThree.PNG';

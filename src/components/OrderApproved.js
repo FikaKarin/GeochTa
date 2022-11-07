@@ -1,19 +1,23 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Navbar from './Navbar';
-import { useEffect, useState } from 'react';
+import GoogleMaps from './GoogleMaps';
 
 import '../style/OrderApproved.css';
-import GoogleMaps from './GoogleMaps';
 
 import Kretslopp from '../images/PaketKretslopp.PNG';
 
 import { FcApproval } from 'react-icons/fc';
 import { ImArrowDown } from 'react-icons/im';
 
+//OrderApproved component
+//fetch parents object and saved value
+//fetch contact object
+//Button go to /Notification
 const OrderApproved = () => {
   useEffect(() => {
     AOS.init();

@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
+
+//Animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -15,8 +17,9 @@ import { RiNumber1 } from 'react-icons/ri';
 import { FaBaby } from 'react-icons/fa';
 
 //Welcome component
-//Display current user info
-//Log out
+//fetch parents object from db.json. Display current user info
+//fetch contact object from db.json. Display in modal PopUp with log out button
+//Button Link to /Select
 const Welcome = () => {
   useEffect(() => {
     AOS.init();

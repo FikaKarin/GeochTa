@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 import Top from '../images/BankIdTop.jpg';
@@ -6,6 +5,11 @@ import Bottom from '../images/BankIdBottom.png';
 
 import '../style/LogIn.css';
 
+//Login component
+//input with personNumber value from db.json as login
+//Login-button
+//fetch parents from db.json
+//if-statement for log in
 const LogIn = () => {
   const [parent, setParent] = useState(null);
 
@@ -23,6 +27,8 @@ const LogIn = () => {
     getParent();
   }, []);
 
+  //If personNumber in object matches input value - valid login 
+  //and redirect to /Welcome Otherwise alert window
   let personNr = parent ? parent.personNumber : null;
   if (personNr != null) {
     document.getElementById('input').value = '9001243501';

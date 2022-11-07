@@ -1,14 +1,20 @@
-// import React, { Component } from 'react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Link } from 'react-router-dom';
+
 import '../style/PackageList.css';
+
 import SelectButton from './SelectButton';
 
+//PackageList component
+//fetch Packages and products from db.json
+//display in Accordion, Typography for drop-down effect
+//SelectButton component to save choice to db.json object + Link to /Confirm
 const PackageList = () => {
 
   const [packages, setPackages] = useState(null);
