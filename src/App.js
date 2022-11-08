@@ -2,7 +2,6 @@ import './App.css';
 import './style/LandingPage.css';
 import './style/LogIn.css';
 import './style/Welcome.css';
-import './style/Select.css';
 import './style/OrderApproved.css';
 import './style/Confirm.css';
 import './style/Notification.css';

@@ -9,20 +9,20 @@
         {
           "age": "2 månader",
           "package": {
-            "id": 0,
-            "size": "Strl: 44-50",
+            "id": 2,
+            "size": "Strl: 56-60",
             "productlist": [
               {
                 "id": 0,
-                "product": "5 sparkdräkter"
+                "product": "7 sparkdräkter"
               },
               {
                 "id": 1,
-                "product": "5 tröjor"
+                "product": "7 tröjor"
               },
               {
                 "id": 2,
-                "product": "5 byxor"
+                "product": "7 byxor"
               },
               {
                 "id": 3,

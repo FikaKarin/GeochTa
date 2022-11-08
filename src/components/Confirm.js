@@ -67,7 +67,7 @@ const Confirm = () => {
           <ul className='confirmText'>
             <li>Lägg kläderna i samma kartong som de kom i.</li>
             <li className='my-6'>
-              Returnera kartongen på: <br />
+              Returnera kartongen till: <br />
               <span className='pt-3 font-bold text-lg'>
                 {' '}
                 {contact != null ? contact.office : 'Kontor ej valt'}

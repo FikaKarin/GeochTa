@@ -46,13 +46,13 @@ const PackageList = () => {
           <Typography component={'span'}>
             <div>
               <ul>
-                <div className='size font-bold text-xl'>
+                <div className='size font-bold text-lg'>
                   {packages ? packages[0].size : ''}
                 </div>
                 <br />
                 {packages
                   ? packages[0].productlist.map((prod) => (
-                      <div className='prod1 leading-9' key={prod.id}> {prod.product} </div>
+                      <div className='prod1 leading-9 italic' key={prod.id}> {prod.product} </div>
                     ))
                   : ''}
               </ul>
@@ -85,7 +85,7 @@ const PackageList = () => {
                 <br />
                 {packages
                   ? packages[1].productlist.map((prod) => (
-                      <div className='leading-9 prod2' key={prod.id}> {prod.product} </div>
+                      <div className='leading-9 prod2 italic' key={prod.id}> {prod.product} </div>
                     ))
                   : ''}
               </ul>
@@ -116,7 +116,7 @@ const PackageList = () => {
                 <br />
                 {packages
                   ? packages[2].productlist.map((prod) => (
-                      <div className='leading-9 prod3' key={prod.id}> {prod.product} </div>
+                      <div className='prod3 leading-9 italic' key={prod.id}> {prod.product} </div>
                     ))
                   : ''}
               </ul>

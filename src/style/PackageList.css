@@ -1,13 +1,13 @@
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
-    background-color: #fdf6b4b1;
+    background-color: #fdf6b4;
   }
 
   #panel2a-header {
-    background: rgba(194, 233, 184, 0.518);
+    background: rgb(194, 233, 184);
   }
 
   .css-1elwnq4-MuiPaper-root-MuiAccordion-root:last-of-type{
-  background-color: rgba(207, 227, 250, 0.81);
+  background-color: rgb(207, 227, 250);
   }  
   
   .sizeSmall {
