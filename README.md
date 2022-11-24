@@ -4,9 +4,9 @@ Responsive for iPhone XR and iPad Air, regular and rotated view.
 
 Make responsiv app from assigned prototype.
 
-TERMINAL <br>
-npx json-server --watch db.json --port 3001
-npm start
+TERMINAL 
+### npx json-server --watch db.json --port 3001 
+### npm start
 
 
 
