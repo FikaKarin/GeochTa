@@ -1,8 +1,10 @@
 Front End Project --- School assignment
 
+Responsive for iPhone XR and iPad Air, regular and rotated view.
+
 Make responsiv app from assigned prototype.
 
-TERMINAL
+TERMINAL <br>
 npx json-server --watch db.json --port 3001
 npm start
 
