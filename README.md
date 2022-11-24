@@ -1,5 +1,5 @@
 #Front End Project --- School assignment
-Make responsiv app from assigned prototype:https://www.figma.com/file/FdAv1vf2CedtMoW5UAmmy7/Baby-app?node-id=0%3A1
+Make responsiv app from assigned prototype: https://www.figma.com/file/FdAv1vf2CedtMoW5UAmmy7/Baby-app?node-id=0%3A1
 
 Responsive for iPhone XR and iPad Air, regular and rotated view.
 
