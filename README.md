@@ -1,16 +1,17 @@
-###Front End Project --- School assignment
+#Front End Project --- School assignment
+Make responsiv app from assigned prototype:https://www.figma.com/file/FdAv1vf2CedtMoW5UAmmy7/Baby-app?node-id=0%3A1
 
 Responsive for iPhone XR and iPad Air, regular and rotated view.
 
-Make responsiv app from assigned prototype.
 
-## TERMINAL 
- npx json-server --watch db.json --port 3001 
+### TERMINAL 
+npx json-server --watch db.json --port 3001 
+<br>
 npm start
 
 
 
-
+<br><br><br><br>
 
 # Getting Started with Create React App
 
